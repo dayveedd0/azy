@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.AZYtapes.com/sightings.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:17:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZY — SIGHTINGS</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- VHS LAYERS -->
+  <div class="vhs-grain"></div>
+  <canvas id="noise-canvas"></canvas>
+  <div class="vhs-scanlines"></div>
+  <div class="vhs-vignette"></div>
+  <div class="vhs-flicker"></div>
+
+  <!-- VHS HUD -->
+  <div class="vhs-hud-top-left">
+    <span class="hud-rec"><span class="rec-dot"></span> REC</span>
+  </div>
+  <div class="vhs-hud-top-right">
+    <span id="vhs-date"></span>
+  </div>
+  <div class="vhs-hud-bottom-left">
+    <span class="hud-play">▶ PLAY</span>
+  </div>
+  <div class="vhs-hud-bottom-right">
+    <span id="vhs-counter">00:00:00</span>
+  </div>
+
+  <!-- FIXED BACK BUTTON -->
+  <a href="index-2.html" class="back-btn">
+    <span class="back-arrow">←</span>
+    <span class="back-text">AZY</span>
+  </a>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-title anim-fade-in">
+      <span class="page-label">SIGHTINGS</span>
+      <span class="page-label-jp">目撃情報</span>
+    </div>
+    <div class="page-header-sub anim-fade-in" style="--delay: 0.3s">Reported encounters from across Japan.</div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="tape-section">
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p class="tape-jp">以下は日本各地から寄せられた目撃報告である。</p>
+        <p>The following are reported sightings, collected from witnesses across Japan. None have been officially verified. In each account, a pattern emerges — AZY doesn't just appear. He arrives exactly when someone needs him.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGHTINGS -->
+  <section class="sightings-list">
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">博多 — HAKATA</span>
+        <span class="sighting-date">日付不明</span>
+      </div>
+      <p>A ramen shop owner reported a dog sitting at his counter during a typhoon. The dog ate a full bowl of tonkotsu ramen and left exact change on the counter. Before leaving, the dog glanced at the owner's phone — a message from his estranged daughter. The owner called her that night.</p>
+      <p class="tape-jp">「あの犬がいなかったら、電話しなかったと思う」</p>
+      <p class="tape-translation">"If that dog hadn't been there, I don't think I would've called."</p>
+    </div>
+
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">長野 — NAGANO</span>
+        <span class="sighting-date">冬季</span>
+      </div>
+      <p>A bus driver on the last route to the mountains said a white dog rode the bus three nights in a row. Always the same seat. Always looking out the window at the snow. On the third night, the driver was going to quit. AZY sat next to him at the terminal for an hour without moving. The driver didn't quit.</p>
+      <p class="tape-jp">「誰かがわかってくれている気がした」</p>
+      <p class="tape-translation">"It felt like someone understood."</p>
+    </div>
+
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">奈良 — NARA</span>
+        <span class="sighting-date">春</span>
+      </div>
+      <p>A shrine maiden found paw prints leading up to the offering box. Inside was a handwritten prayer on a folded piece of paper. The handwriting was shaky, like someone learning to hold a pen for the first time.</p>
+      <p class="tape-highlight">「自分の居場所を見つけたい」</p>
+      <p class="tape-translation">I want to find where I belong.</p>
+    </div>
+
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">京都 — KYOTO</span>
+        <span class="sighting-date">秋</span>
+      </div>
+      <p>A convenience store security camera captured 14 seconds of footage showing a dog walking through the sliding doors at 3:47 AM. The dog walked to the magazine rack, appeared to browse, then left. The footage was confiscated by management. A copy was leaked online, then deleted within hours.</p>
+    </div>
+
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">札幌 — SAPPORO</span>
+        <span class="sighting-date">真冬</span>
+      </div>
+      <p>A postal worker found a VHS tape in a red mailbox on her route. No address, no stamp. Just a label that read「ウミ」in faded marker. Six seconds of static, then a dog sitting in the snow, looking directly into the camera. Then nothing.</p>
+      <p class="tape-jp">「あの目は — 何かを言おうとしていた」</p>
+      <p class="tape-translation">"Those eyes — they were trying to say something."</p>
+    </div>
+
+    <div class="sighting-entry">
+      <div class="sighting-header">
+        <span class="sighting-location">大阪 — OSAKA</span>
+        <span class="sighting-date">不明</span>
+      </div>
+      <p>Multiple reports from Shinsekai district of a dog seen sitting alone in a park at night, perfectly still, facing the Tsutenkaku Tower. One man approached to offer food. The dog looked at him, then looked away — not with disinterest, but with something the man later described as "politeness." He sat down next to AZY anyway. They stayed like that until sunrise. The man said it was the best advice he'd ever received — and nobody said a word.</p>
+      <p class="tape-jp">「断られた気がした。でも、嫌な感じじゃなかった」</p>
+      <p class="tape-translation">"It felt like being turned down. But it didn't feel bad."</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <a href="index-2.html" class="back-btn-inline">← BACK TO AZY</a>
+    <span class="footer-end">▮ STOP</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<!-- Mirrored from www.AZYtapes.com/sightings.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:17:58 GMT -->
+</html>

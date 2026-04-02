@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.AZYtapes.com/footage.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:16:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZY — FOOTAGE</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- VHS LAYERS -->
+  <div class="vhs-grain"></div>
+  <canvas id="noise-canvas"></canvas>
+  <div class="vhs-scanlines"></div>
+  <div class="vhs-vignette"></div>
+  <div class="vhs-flicker"></div>
+
+  <!-- VHS HUD -->
+  <div class="vhs-hud-top-left">
+    <span class="hud-rec"><span class="rec-dot"></span> REC</span>
+  </div>
+  <div class="vhs-hud-top-right">
+    <span id="vhs-date"></span>
+  </div>
+  <div class="vhs-hud-bottom-left">
+    <span class="hud-play">▶ PLAY</span>
+  </div>
+  <div class="vhs-hud-bottom-right">
+    <span id="vhs-counter">00:00:00</span>
+  </div>
+
+  <!-- FIXED BACK BUTTON -->
+  <a href="index-2.html" class="back-btn">
+    <span class="back-arrow">←</span>
+    <span class="back-text">AZY</span>
+  </a>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-title anim-fade-in">
+      <span class="page-label">FOOTAGE</span>
+      <span class="page-label-jp">記録映像</span>
+    </div>
+    <div class="page-header-sub anim-fade-in" style="--delay: 0.3s">Memes, content, and everything from the community.</div>
+  </header>
+
+  <!-- DESCRIPTION -->
+  <section class="tape-section">
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p class="tape-jp">このセクションにはコミュニティが作成したすべてのコンテンツが表示されます。</p>
+        <p>This is where all the content lives. Memes, edits, art, and everything the community creates — it all gets archived here. All content posted on our main X account will be collected and displayed in this section.</p>
+        <p>Think of this as the tape vault. Every meme is a recording. Every post is a sighting. This is AZY's visual footprint.</p>
+        <p class="tape-jp">まだテープは空です。でも、もうすぐ。</p>
+        <p class="tape-translation">The tapes are empty for now. But not for long.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="viewfinder-section">
+    <div class="viewfinder-grid">
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="tape1.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="tape1.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage1.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage1.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage2.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage2.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage3.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage3.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage4.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage4.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage5.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage5.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage6.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage6.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage7.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage7.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage8.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage8.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage9.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage9.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage10.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage10.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage11.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage11.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage12.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage12.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage13.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage13.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage14.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage14.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage15.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage15.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage16.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage16.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage17.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage17.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage18.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage18.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage19.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage19.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage20.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage20.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage21.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage21.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage22.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage22.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage23.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage23.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage24.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage24.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage25.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage25.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage26.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage26.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage27.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage27.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage28.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage28.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage29.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage29.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage30.MP4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage30.MP4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage31.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage31.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage32.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage32.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage34.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage34.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage35.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage35.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage36.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage36.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage37.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage37.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage38.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage38.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage39.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage39.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage40.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage40.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage41.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage41.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage42.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage42.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage43.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage43.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage44.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage44.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage45.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage45.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage46.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage46.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage47.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage47.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage48.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage48.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <div class="viewfinder-frame viewfinder-video-frame">
+        <video class="viewfinder-video" controls playsinline preload="metadata">
+          <source src="footage49.mp4" type="video/mp4">
+        </video>
+        <div class="frame-noise"></div>
+        <a href="footage49.mp4" download class="dl-btn">↓</a>
+      </div>
+
+      <!-- Placeholder: future content -->
+      <div class="viewfinder-frame">
+        <div class="frame-noise"></div>
+        <div class="frame-content">
+          <div class="no-signal-text">信号なし</div>
+          <div class="no-signal-sub">NO SIGNAL</div>
+        </div>
+        <div class="frame-timecode">--:--:--</div>
+      </div>
+
+      <!-- Placeholder: future content -->
+      <div class="viewfinder-frame">
+        <div class="frame-noise"></div>
+        <div class="frame-content">
+          <div class="no-signal-text">待機中</div>
+          <div class="no-signal-sub">STANDBY</div>
+        </div>
+        <div class="frame-timecode">--:--:--</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <a href="index-2.html" class="back-btn-inline">← BACK TO AZY</a>
+    <span class="footer-end">▮ STOP</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<!-- Mirrored from www.AZYtapes.com/footage.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:17:58 GMT -->
+</html>

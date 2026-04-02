@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.AZYtapes.com/tapes.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:16:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZY — TAPES</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- VHS LAYERS -->
+  <div class="vhs-grain"></div>
+  <canvas id="noise-canvas"></canvas>
+  <div class="vhs-scanlines"></div>
+  <div class="vhs-vignette"></div>
+  <div class="vhs-flicker"></div>
+
+  <!-- VHS HUD -->
+  <div class="vhs-hud-top-left">
+    <span class="hud-rec"><span class="rec-dot"></span> REC</span>
+  </div>
+  <div class="vhs-hud-top-right">
+    <span id="vhs-date"></span>
+  </div>
+  <div class="vhs-hud-bottom-left">
+    <span class="hud-play">▶ PLAY</span>
+  </div>
+  <div class="vhs-hud-bottom-right">
+    <span id="vhs-counter">00:00:00</span>
+  </div>
+
+  <!-- FIXED BACK BUTTON -->
+  <a href="index-2.html" class="back-btn">
+    <span class="back-arrow">←</span>
+    <span class="back-text">AZY</span>
+  </a>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-title anim-fade-in">
+      <span class="page-label">TAPES</span>
+      <span class="page-label-jp">テープ</span>
+    </div>
+    <div class="page-header-sub anim-fade-in" style="--delay: 0.3s">The story of AZY — told across six recovered tapes.</div>
+  </header>
+
+  <!-- RECOVERED TAPE VIDEO -->
+  <section class="tape-section">
+    <div class="tape-header">
+      <span class="tape-label">RECOVERED FOOTAGE</span>
+      <span class="tape-date">回収映像</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-video-frame">
+        <video class="tape-video" controls playsinline preload="metadata">
+          <source src="tape1.mp4" type="video/mp4">
+          <source src="tape1.MOV" type="video/quicktime">
+        </video>
+        <div class="tape-video-scanlines"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 001 -->
+  <section class="tape-section">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 001</span>
+      <span class="tape-date">起源 — ORIGIN</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p class="tape-jp">ウミは日本の小さな町で生まれた。</p>
+        <p>AZY was born in a small town in Japan. A nowhere place — the kind of town that doesn't show up on most maps. Somewhere between the mountains and the sea, where the fog rolls in thick every morning and doesn't leave until noon.</p>
+        <p>He was part of a litter of six. The others were normal. They chased their tails, chewed on shoes, barked at nothing. AZY was quiet. He watched.</p>
+        <p class="tape-jp">彼は最初から違っていた。</p>
+        <p>From the very beginning, he was different.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 002 -->
+  <section class="tape-section dark">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 002</span>
+      <span class="tape-date">覚醒 — AWAKENING</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p>The first sign came when AZY was three months old.</p>
+        <p>His owner — an old woman who ran a tofu shop near the train station — left the television on one evening. A news broadcast. AZY sat in front of the screen, completely still, and watched the entire program. Not the way a dog watches a screen. The way a person does. His eyes moved with the text. His ears tilted at names. He <em>understood</em>.</p>
+        <p class="tape-jp">彼は自分が他の犬とは違うことに気づいた。</p>
+        <p class="tape-jp">彼には意識があった。</p>
+        <p>He realized he was not like the other dogs. He had something they didn't — a conscience. Thoughts that stretched beyond hunger and sleep and territory. He could think about tomorrow. He could wonder about yesterday. He could look at the moon and feel something he couldn't name.</p>
+        <p>The old woman noticed too. She'd catch him sitting upright by the window at dawn, watching the fishermen head to port, his expression too still, too knowing. She started leaving the radio on for him. Then books — open, face-down on the tatami floor. She never told anyone. She just knew.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 003 -->
+  <section class="tape-section">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 003</span>
+      <span class="tape-date">悟り — REALIZATION</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p class="tape-jp">ウミは人間ができることなら、何でもできた。</p>
+        <p>By the time he was a year old, AZY could do anything a human could.</p>
+        <p>He learned to read — not just Japanese, but the feeling behind the words. He understood money, kindness, cruelty, and weather patterns. He could navigate a train schedule. He memorized the sound of every engine that passed through the station and knew which ones were running late.</p>
+        <p>He never spoke. Not because he couldn't, but because he hadn't decided if he wanted to.</p>
+        <p>The townspeople began to talk. A dog that bows back when you greet him. A dog that waits at the crosswalk for the light to change. A dog that once carried an umbrella to a child caught in the rain.</p>
+        <p>But what surprised them most wasn't the human things he did. It was the advice. A fisherman sat on the dock one morning, staring at the water, unable to decide whether to sell his boat. AZY walked up, sat beside him, and placed a paw on the man's knee. The fisherman said later that in that moment, he knew exactly what to do. He kept the boat.</p>
+        <p class="tape-jp">ウミのそばにいると、物事がはっきり見えるようになる。</p>
+        <p class="tape-translation">When you're near AZY, things become clear.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 004 -->
+  <section class="tape-section dark">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 004</span>
+      <span class="tape-date">旅立ち — DEPARTURE</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p>One morning, the old woman woke up and AZY was gone.</p>
+        <p>No mess. No broken fence. Just an open door and a pair of sandals placed neatly by the entrance — hers, which she'd left outside the night before. He'd brought them in for her before he left.</p>
+        <p class="tape-jp">ウミは自分の運命を探しに旅に出た。</p>
+        <p>AZY had set out to find his destiny. Not because he was unhappy — but because he knew there was more to see. More to learn. More to understand. AZY was, at his core, an investigator. A dog who needed to see things for himself. To walk through a city at 4 AM and understand why the streetlights hum. To sit on a mountain and figure out why the wind changes direction at dusk.</p>
+        <p>He walked along the coast at first. Past harbors and lighthouse keepers and vending machines glowing in the dark. He moved through cities and villages, through rice fields at sunset and neon-soaked alleyways at midnight. Tokyo. Kyoto. Osaka. Places where no one looks twice at a dog walking alone.</p>
+        <p>But they should have. Because AZY wasn't wandering. He was searching.</p>
+        <p class="tape-jp">何を探していたのか、誰にもわからなかった。ウミ自身にも。</p>
+        <p class="tape-translation">What he was looking for — nobody knew. Not even AZY himself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 005 -->
+  <section class="tape-section">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 005</span>
+      <span class="tape-date">旅路 — THE JOURNEY</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p>He was seen everywhere. And everywhere he went, he left something behind — not a mark, but a feeling. People who met AZY, even briefly, said the same thing: he made you think. He made you pay attention to what you'd been ignoring.</p>
+        <p>A ramen shop owner in Hakata swore a dog sat at his counter one night during a typhoon, ate a bowl of tonkotsu, and left exact change. Before leaving, the dog looked at the owner's phone — a text from his estranged daughter — and then looked back at him. The owner called her that night for the first time in three years.</p>
+        <p>A shrine maiden in Nara found paw prints leading up to the offering box — and a written prayer tucked inside. The handwriting was shaky, like someone learning to hold a pen. It read:</p>
+        <p class="tape-highlight">「自分の居場所を見つけたい」</p>
+        <p class="tape-translation">I want to find where I belong.</p>
+        <p>A bus driver in Nagano said a white dog rode the last bus to the mountains three nights in a row. On the third night, the driver was going to quit his job. The dog sat next to him at the terminal and didn't move for an hour. The driver said it felt like sitting with someone who understood. He didn't quit.</p>
+        <p class="tape-jp">ウミは国中を旅した。立ち止まることなく。振り返ることなく。行く先々で、誰かの人生を少しだけ変えながら。</p>
+        <p class="tape-translation">AZY traveled across the country. Never stopping. Never looking back. Quietly changing lives wherever he went.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAPE 006 -->
+  <section class="tape-section dark">
+    <div class="tape-header">
+      <span class="tape-label">TAPE 006</span>
+      <span class="tape-date">現在 — NOW</span>
+    </div>
+    <div class="tape-body">
+      <div class="tape-text-block">
+        <p>The tapes keep surfacing.</p>
+        <p>In Osaka. In Sapporo. In small towns with no name. Left in places where someone would find them — a convenience store counter, a library return slot, a park bench in the rain. Each one containing a few seconds of footage. Static, then a shape. A dog, sitting quietly, watching.</p>
+        <p>No one knows where AZY is now. Some say he found what he was looking for. Some say he's still walking — still investigating, still experiencing, still sitting down next to strangers and giving them the courage to do what they already knew they should.</p>
+        <p>Some say if you leave a tape in a VCR overnight, you might hear something — faint, beneath the static — that sounds like breathing. And if you listen long enough, it almost sounds like advice.</p>
+        <p class="tape-jp">ウミの物語はまだ終わっていない。</p>
+        <p class="tape-jp">テープはまだ回っている。</p>
+        <p class="tape-highlight">▶</p>
+        <p class="tape-translation">AZY's story is not over yet. The tape is still rolling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <a href="index-2.html" class="back-btn-inline">← BACK TO AZY</a>
+    <span class="footer-end">▮ STOP</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<!-- Mirrored from www.AZYtapes.com/tapes.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 01:16:05 GMT -->
+</html>
