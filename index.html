@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azy between dimensions.</title>
+  <link rel="icon" type="image/png" href="images/mouse.png" />
+  <!-- BITCOUNT SINGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- VHS / FILM OVERLAY -->
+  <div class="vhs-overlay"></div>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+  <div class="vhs-flicker"></div>
+  <div class="vhs-edge-top"></div>
+  <div class="vhs-edge-bottom"></div>
+
+  <!-- TIMESTAMP VHS -->
+  <div class="vhs-timestamp" id="vhsTimestamp"></div>
+
+  <!-- BG VIDEO -->
+  <div class="bg-video-wrap">
+    <video autoplay muted loop playsinline id="bgVideo">
+      <source src="images/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-logo glow-hover" id="navLogoHome">
+      <span class="nav-logo-bracket">[</span>
+      <span class="nav-logo-text">Azy</span>
+      <span class="nav-logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home"  class="nav-link active glow-hover" data-page="home">HOME</a></li>
+      <li><a href="#lore"  class="nav-link glow-hover"        data-page="lore">FILE</a></li>
+      <li><a href="#links" class="nav-link glow-hover"        data-page="links">LINKS</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">Earth</span>
+    </div>
+  </nav>
+
+  <!-- PAGES WRAPPER -->
+  <main class="pages-wrapper">
+
+    <!-- ══════════════════ PAGE: HOME ══════════════════ -->
+    <section class="page active" id="home">
+      <div class="home-content">
+
+        <div class="home-glitch-wrapper">
+          <div class="home-pre-title">// a signal from nowhere //</div>
+          <h1 class="home-title glitch" data-text="Azy">Azy</h1>
+          <div class="home-subtitle">
+            <span class="type-cursor">between dimensions_</span>
+          </div>
+        </div>
+
+        <div class="home-desc">
+          <p>
+            he crossed something he couldn't name.<br/>
+            no memory. no origin. no map back.<br/>
+            only the quiet persistence of <em>being here</em>.
+          </p>
+        </div>
+
+        <div class="contract-box glow-hover">
+          <div class="contract-label">// contract //</div>
+          <div class="contract-address">
+            <span class="ca-text">Contract Address here.</span>
+            <button class="copy-btn glow-hover" id="copyBtn" onclick="copyCA()">
+              <span class="copy-icon">⧉</span> COPY
+            </button>
+          </div>
+          <div class="copy-feedback" id="copyFeedback">copied to memory</div>
+        </div>
+
+        <div class="home-stats">
+          <div class="stat-item glow-hover">
+            <div class="stat-label">origin</div>
+            <div class="stat-value">UNKNOWN</div>
+          </div>
+          <div class="stat-item glow-hover">
+            <div class="stat-label">state</div>
+            <div class="stat-value blink">PRESENT</div>
+          </div>
+          <div class="stat-item glow-hover">
+            <div class="stat-label">memory</div>
+            <div class="stat-value">VOID</div>
+          </div>
+          <div class="stat-item glow-hover">
+            <div class="stat-label">chain</div>
+            <div class="stat-value">SOLANA</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint">↓</div>
+    </section>
+
+    <!-- ══════════════════ PAGE: FILES ══════════════════ -->
+    <section class="page" id="lore">
+      <div class="lore-content">
+
+        <div class="lore-header">
+          <h2 class="lore-title">the files of Azy</h2>
+          <div class="lore-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+
+        <div class="lore-intro">
+          <p>
+            these are not records of what happened. they are traces of a consciousness learning to exist. Azy arrived without a past — and so everything became new: every texture, every silence, every moment of connection. what you see here are traces of someone becoming themselves in real time.
+          </p>
+        </div>
+
+        <!-- FILE 01 -->
+        <div class="fragment" data-num="01">
+          <div class="fragment-header">
+            <span class="frag-num">FILE_01</span>
+            <span class="frag-tag">// the crossing //</span>
+          </div>
+          <div class="fragment-body">
+            <div class="fragment-video">
+              <div class="video-wrapper glow-hover">
+                <video controls playsinline preload="metadata">
+                  <source src="images/1.mp4" type="video/mp4" />
+                </video>
+                <div class="video-vhs-overlay"></div>
+                <div class="video-label">REC ●</div>
+              </div>
+            </div>
+            <div class="fragment-text">
+              <h3>he arrived before he knew he was arriving</h3>
+              <p>
+                no warning. no preparation. one instant — elsewhere. the next — here. the atmosphere hit him like static, a frequency his whole being had never been asked to process. he stood still, registering a world that had no name for what he was.
+              </p>
+              <p>
+                his consciousness fractured on contact. everything he had been — gone. what remained was the act of existing, stripped of all context. the first thing he understood: gravity pulls. the second: silence, here, has weight.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILE 02 -->
+        <div class="fragment" data-num="02">
+          <div class="fragment-header">
+            <span class="frag-num">FILE_02</span>
+            <span class="frag-tag">// learning to see //</span>
+          </div>
+          <div class="fragment-body reverse">
+            <div class="fragment-video">
+              <div class="video-wrapper glow-hover">
+                <video controls playsinline preload="metadata">
+                  <source src="images/2.mp4" type="video/mp4" />
+                </video>
+                <div class="video-vhs-overlay"></div>
+                <div class="video-label">REC ●</div>
+              </div>
+            </div>
+            <div class="fragment-text">
+              <h3>observation as a form of survival</h3>
+              <p>
+                he began to watch — not as a spectator, but as someone trying to decode a language with no dictionary. every gesture, every pattern of light, every way humans moved toward or away from each other: absorbed into a mind with no shelf to place them on.
+              </p>
+              <p>
+                he watched them grieve and felt something vibrate inside him — a frequency he had no name for. in that namelessness, a question formed: does understanding require memory, or only presence?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILE 03 -->
+        <div class="fragment" data-num="03">
+          <div class="fragment-header">
+            <span class="frag-num">FILE_03</span>
+            <span class="frag-tag">// trying to belong //</span>
+          </div>
+          <div class="fragment-body">
+            <div class="fragment-video">
+              <div class="video-wrapper glow-hover">
+                <video controls playsinline preload="metadata">
+                  <source src="images/3.mp4" type="video/mp4" />
+                </video>
+                <div class="video-vhs-overlay"></div>
+                <div class="video-label">REC ●</div>
+              </div>
+            </div>
+            <div class="fragment-text">
+              <h3>the body learns what the mind forgot</h3>
+              <p>
+                he tried to insert himself into the structures he observed. to occupy space without owning it. he mimicked, adapted, experimented — each attempt a strange blend of failure and revelation. society moved in patterns he could almost predict, yet never quite anticipate.
+              </p>
+              <p>
+                but within these attempts something unexpected happened: he began to feel. not memories — but responses. a new identity forming from zero, built entirely from the present.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILE 04 -->
+        <div class="fragment" data-num="04">
+          <div class="fragment-header">
+            <span class="frag-num">FILE_04</span>
+            <span class="frag-tag">// turning inward //</span>
+          </div>
+          <div class="fragment-body reverse">
+            <div class="fragment-video">
+              <div class="video-wrapper glow-hover">
+                <video controls playsinline preload="metadata">
+                  <source src="images/4.mp4" type="video/mp4" />
+                </video>
+                <div class="video-vhs-overlay"></div>
+                <div class="video-label">REC ●</div>
+              </div>
+            </div>
+            <div class="fragment-text">
+              <h3>echoes of something that preceded the rupture</h3>
+              <p>
+                in stillness, he began to search inward. the experiences accumulating on earth started to feel familiar in ways he couldn't explain — echoes of something that existed before the fracture. were these new feelings, or the surface of an older self trying to remember how to breathe?
+              </p>
+              <p>
+                he couldn't tell. but the questioning itself felt like forward motion. maybe understanding yourself doesn't require remembering yourself.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILE 05 -->
+        <div class="fragment" data-num="05">
+          <div class="fragment-header">
+            <span class="frag-num">FILE_05</span>
+            <span class="frag-tag">// two rivers, one being //</span>
+          </div>
+          <div class="fragment-body">
+            <div class="fragment-video">
+              <div class="video-wrapper glow-hover">
+                <video controls playsinline preload="metadata">
+                  <source src="images/5.mp4" type="video/mp4" />
+                </video>
+                <div class="video-vhs-overlay"></div>
+                <div class="video-label">REC ●</div>
+              </div>
+            </div>
+            <div class="fragment-text">
+              <h3>living and searching — at the same time</h3>
+              <p>
+                his existence now runs in parallel. on one side: a new life on earth, assembled from observation, small connections, and unexpected moments of belonging. on the other: a quiet inward search for the meaning of his own presence — for whoever he was before the crossing.
+              </p>
+              <p>
+                he doesn't know if these two currents will ever meet. but he continues — existing in the space between what was and what is. neither of one world nor another. simply: <em>here</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════ PAGE: LINKS ══════════════════ -->
+    <section class="page" id="links">
+      <div class="links-content">
+
+        <div class="links-header">
+          <div class="links-pre">// wherever the signal reaches //</div>
+          <h2 class="links-title">Azy links</h2>
+          <p class="links-sub">find him where the frequency allows.</p>
+        </div>
+
+        <div class="links-grid">
+
+          <!-- TWITTER — edit href below -->
+          <a href="https://x.com/azyfiles" target="_blank" class="link-card glow-hover">
+            <div class="link-card-inner">
+              <div class="link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </div>
+              <div class="link-info">
+                <div class="link-name">@azyfiles</div>
+              </div>
+              <div class="link-arrow">→</div>
+            </div>
+            <div class="link-card-glow"></div>
+          </a>
+
+          <!-- TELEGRAM — edit href below -->
+          <a href="https://www.telegram.org/" target="_blank" class="link-card glow-hover">
+            <div class="link-card-inner">
+              <div class="link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+              </div>
+              <div class="link-info">
+                <div class="link-name">telegram group</div>
+              </div>
+              <div class="link-arrow">→</div>
+            </div>
+            <div class="link-card-glow"></div>
+          </a>
+
+          <!-- BUY HERE — edit href below -->
+          <a href="https://jup.ag/" target="_blank" class="link-card featured glow-hover">
+            <div class="link-card-inner">
+              <div class="link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="34" height="34">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div class="link-info">
+                <div class="link-name">buy $Azy</div>
+              </div>
+              <div class="link-arrow">→</div>
+            </div>
+            <div class="link-card-glow"></div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">Azy © 2026</div>
+      <div class="footer-marquee">
+        <span>
+          ✦ he lost everything and found something greater &nbsp;&nbsp;&nbsp;
+          ✦ a signal from nowhere &nbsp;&nbsp;&nbsp;
+          ✦ between dimensions &nbsp;&nbsp;&nbsp;
+          ✦ the signal is live. the being is here &nbsp;&nbsp;&nbsp;
+          ✦ to exist without a past is to be entirely free &nbsp;&nbsp;&nbsp;
+          ✦ he lost everything and found something greater &nbsp;&nbsp;&nbsp;
+          ✦ a signal from nowhere &nbsp;&nbsp;&nbsp;
+          ✦ between dimensions &nbsp;&nbsp;&nbsp;
+          ✦ the signal is live. the being is here &nbsp;&nbsp;&nbsp;
+          ✦ to exist without a past is to be entirely free &nbsp;&nbsp;&nbsp;
+        </span>
+      </div>
+      <div class="footer-right">$Azy</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
